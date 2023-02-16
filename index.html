@@ -13,19 +13,29 @@
 			<h1>방송제작도움시스템</h1>
 		</div>
 
-		<div>
-		<p>(다른페이지에서 클릭 시 메인이동)</p>
-		</div>
 
 		<ul>
-			<li><a href="notpage.html">라디오스튜디오</a></li>
-			<li><a href="notpage.html">프롬프터</a></li>
-			<li><a href="notpage.html">부조정실</a></li>
-			<li><a href="QSIGN.html">큐사인(스페이스바로)</a></li>
-			<li><a href="notpage.html">큐시트관리</a></li>
-			<li><a href="time.html">현재시간</a></li>
+			<li><a>ver.1.1 (접속 중 다른화면 클릭 시 메인으로 이동)</a>
+			<li><a href="notpage.html">라디오스튜디오(제작중)</a></li>
+			<li><a href="notpage.html">프롬프터(제작중)</a></li>
+			<li><a href="notpage.html">시종프로그램(제작중)</a></li>
+			<li><a href="QSIGN.html">큐사인('스페이스바'로작동)</a></li>
+			<li><a href="notpage.html">큐시트관리(제작중)</a></li>
+			<li><a href="time.html">현재시간표시</a></li>
+            <li><a onclick="toggleFullScreen()">전체화면(해제불가 시 F11)</a></li>
 		</ul>
 	</nav>
 	<div id="image-container"></div>
+	<script>
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
 </body>
 </html>
