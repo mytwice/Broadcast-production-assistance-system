@@ -1,0 +1,64 @@
+#menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 400px; /* 메뉴창을 더 넓게 조정 */
+	background-color: #333;
+	color: #fff;
+	font-size: 16px;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	height: 80px;
+	padding: 20px;
+}
+
+.square {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	margin-right: 10px;
+}
+
+/* 오른쪽 이미지 부분 */
+/* 오른쪽 이미지 부분 */
+#image-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: calc(100% - 400px);
+	background-image: url('20220315_194618.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+  }
+  
+  
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 15px 20px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #444;
+}
+
+h1 {
+	margin: 0;
+	font-size: 18px;
+}
